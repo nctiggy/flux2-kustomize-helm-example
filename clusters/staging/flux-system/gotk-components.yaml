@@ -3456,10 +3456,6 @@ spec:
           name: http-prom
         - containerPort: 9440
           name: healthz
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
         resources:
           limits:
             cpu: 1000m
